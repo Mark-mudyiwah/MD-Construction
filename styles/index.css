@@ -1,0 +1,496 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #d83c09;
+   margin-right: 10px;
+   border-radius: 10px;
+}
+
+.logo-icon{
+    width: 60px;
+}
+
+.md-text,
+.construction-text{
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+/* BODY */
+body {
+    background: #81c7e742;
+    color: #222;
+}
+
+/* ================= NAVBAR ================= */
+.header {
+    display: flex;
+    align-items: center;
+
+    padding: 6px 0px;
+    background: #0a1934;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header div {
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+}
+
+/* underline hover */
+.header div::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: orange;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.header div div:hover::after {
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ================= HERO ================= */
+.Upp-sec-prim {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../images/background-frontloader-zoom.jpg') no-repeat center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+/* TEXT */
+.build-text,
+.dreams-text {
+    font-size: 50px;
+    font-weight: bold;
+    animation: slideUp 1s ease;
+}
+
+.motto-text {
+    font-size: 24px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease;
+}
+
+/* BUTTONS */
+.sec-links {
+    margin-top: 20px;
+}
+
+.sec-links a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* primary button */
+.sec-links a:first-child {
+    background: orange;
+    color: white;
+}
+
+/* secondary */
+.sec-links a:last-child {
+    border: 2px solid white;
+    color: white;
+}
+
+.sec-links a:hover {
+    opacity: 0.8;
+} 
+
+.upp-sec-sec{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 10px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.upp-sec-sec div{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.number-span{
+    color:rgb(255, 119, 0);
+    margin-right: 6px;
+}
+
+
+.about-brief-div{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.about-1-txt{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.about-2-txt{
+  font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.about-3-txt,
+.about-4-txt,
+.about-5-txt{
+    padding-left: 6px;
+    
+}
+
+.about-4-txt{
+    padding-left: 4px;
+    
+}
+
+.learn-more-btn{
+     background: orange;
+    color: white;
+    padding: 8px 14px;
+    margin-left: 6px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* SECTION TITLES */
+.our-services-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.quality-service-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* ================= SCROLL CONTAINER ================= */
+.services-div {
+    display: flex;
+    gap: 20px;
+
+    padding: 30px 20px;
+    margin-top: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    /* hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+}
+
+.services-div::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* ================= CARD ================= */
+.service-card {
+    flex: 0 0 auto;
+    width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ================= IMAGE ================= */
+.service-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+/* ================= TEXT ================= */
+.service-card span {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+/* ================= VIEW ALL BUTTON ================= */
+.view-all-serv-btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+
+    padding: 10px 25px;
+    text-decoration: none;
+
+    background: orange;
+    color: white;
+    font-weight: 600;
+
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view-all-serv-btn:hover {
+    opacity: 0.8;
+}
+
+/* ================= PROJECT SECTION ================= */
+.our-projects-div {
+    display: flex;
+    gap: 40px;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.our-projects-div .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.our-projects-div .left-side span:first-child {
+    font-size: 14px;
+    color: orange;
+    font-weight: bold;
+}
+
+.our-projects-div .left-side span:nth-child(2) {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.our-projects-div .left-side span:nth-child(3) {
+    color: #555;
+    font-size: 15px;
+}
+
+.our-projects-div .left-side button {
+    margin-top: 15px;
+    width: fit-content;
+
+    padding: 10px 20px;
+    border: none;
+    background: #0a1934;
+    color: white;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.our-projects-div .left-side button:hover {
+    background: orange;
+}
+
+/* ================= RIGHT SIDE (CARDS) ================= */
+.our-projects-div .right-side {
+    flex: 2;
+
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.our-projects-div .right-side::-webkit-scrollbar {
+    display: none;
+}
+
+/* PROJECT CARD */
+.our-projects-div .right-side div {
+    flex: 0 0 auto;
+    width: 220px;
+
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.our-projects-div .right-side div:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.our-projects-div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* TITLE */
+.our-projects-div .right-side span {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+
+/* ================= CTA SECTION ================= */
+.cta-section {
+    background: #0a1934;
+    color: white;
+
+    padding: 20px 10px;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+/* TITLE */
+.cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* SUBTEXT */
+.cta-section p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* BUTTON CONTAINER */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BUTTON STYLE */
+.cta-actions a {
+    text-decoration: none;
+
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+
+    background: orange;
+    color: white;
+
+    transition: 0.3s;
+}
+
+/* SECONDARY BUTTON */
+.cta-actions a:nth-child(2) {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* HOVER */
+.cta-actions a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* ================= CTA SECTION ================= */
+body > div:last-child {
+    background: #0a1934;
+    color: white;
+
+    padding: 40px 20px;
+    margin-top: 40px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CTA LINKS STYLE */
+body > div:last-child span {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body > div:last-child span:hover {
+    color: orange;
+}
