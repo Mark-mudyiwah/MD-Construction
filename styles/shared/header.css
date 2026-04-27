@@ -42,18 +42,20 @@ color: white;
 /* ================= HERO ================= */
 .Upp-sec-prim {
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('../images/commercial-construction.jfif') no-repeat center/cover;
-
+    background: url("../../images/background-frontloader-zoom.jpg");
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    background-size: cover;
+    background-position: center; /* FIXED */
+    background-repeat: no-repeat;
+
     text-align: center;
     color: white;
 }
-
 /* TEXT */
 .build-text,
 .dreams-text {
