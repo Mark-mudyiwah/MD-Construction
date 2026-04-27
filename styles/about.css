@@ -1,0 +1,71 @@
+
+
+.about-section {
+    padding: 60px 20px;
+    background: #ffffff;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* HEADINGS */
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+       color: #d52607;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #d52607;
+}
+
+.about-section h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+/* PARAGRAPHS */
+.about-section p {
+    color: #555;
+    margin-bottom: 15px;
+     
+}
+
+/* WHY CHOOSE US STYLE (makes it pop a bit) */
+.about-section h3 {
+    padding-left: 12px;
+    border-left: 4px solid #d83c09; /* your orange theme */
+}
+
+/* OPTIONAL: add spacing between sections */
+.about-section h2:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 600px) {
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .about-section h2 {
+        font-size: 24px;
+    }
+
+    .about-section h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+ 
+ 

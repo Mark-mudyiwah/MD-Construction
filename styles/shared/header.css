@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    align-items: center;
+
+    padding: 6px 0px;
+    background: #0a1934;
+    color: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header div {
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+}
+
+ 
+
+ 
+
+.nav-links a{
+text-decoration: none;
+color: white;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #b83207;
+}
+
+.nav-links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ================= HERO ================= */
+.Upp-sec-prim {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/commercial-construction.jfif') no-repeat center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+/* TEXT */
+.build-text,
+.dreams-text {
+    font-size: 50px;
+    font-weight: bold;
+    animation: slideUp 1s ease;
+}
+
+.motto-text {
+    font-size: 24px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease;
+}
+
+/* BUTTONS */
+.sec-links {
+    margin-top: 20px;
+}
+
+.sec-links a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* primary button */
+.sec-links a:first-child {
+    background: #d52607;
+    color: white;
+}
+
+/* secondary */
+.sec-links a:last-child {
+    border: 2px solid white;
+    color: white;
+}
+
+.sec-links a:hover {
+    opacity: 0.8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.logo-icon {
+    width: 60px;
+}
