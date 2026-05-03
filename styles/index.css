@@ -38,27 +38,23 @@
     line-height: 1.6;
 }
 
-.learn-more-btn {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    background: black;
-    color: white;
-    cursor: pointer;
-}
+
 
 .learn-more-btn {
-    background: #d52607;
+   border: 1px solid orangered;
     color: white;
     padding: 8px 14px;
     margin-left: 6px;
-    border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 10px;
+    color: #d52607;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .learn-more-btn:hover {
-    background: #e47106;
+    background: #3551c3;
+    color: white;
 }
 
 /* SECTION TITLES */
@@ -82,7 +78,6 @@
 .services-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
     padding: 30px 20px;
     margin-top: 20px;
@@ -109,7 +104,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-
+     gap: 10px;
     background: white;
     border-radius: 10px;
     padding: 15px;
@@ -136,7 +131,8 @@
 .service-card span {
     margin-top: 10px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
+    color: blue;
 }
 
 
