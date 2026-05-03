@@ -9,14 +9,29 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    
 }
 
 .header div {
     cursor: pointer;
     padding: 5px 10px;
     position: relative;
+
 }
 
+.hamburger-menu-container{
+    display: none;
+}
+
+.menu-icon{
+    width: 40px;
+}
+.md-construction-text{
+    color:orangered;
+    font-size: 24px;
+    font-weight: 800;
+    display: none;
+}
  
 
  
@@ -39,11 +54,33 @@ color: white;
     width: 100%;
 }
 
+@media (max-width: 768px) {
+
+  .header {
+ 
+        justify-content: space-between;
+ 
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .md-construction-text{
+        display: inline;
+    }
+
+    .hamburger-menu-container{
+        display: inline;
+    }
+}
+
+
+
+
 /* ================= HERO ================= */
 .Upp-sec-prim {
     height: 80vh;
-    background: url("../../images/background-frontloader-zoom.jpg");
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,6 +92,8 @@ color: white;
 
     text-align: center;
     color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 /* TEXT */
 .build-text,
@@ -111,9 +150,39 @@ color: white;
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .logo-icon {
     width: 60px;
+    border-radius: 30px;
+}
+
+/*sidebar*/
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     background-color:orangered;
+     position: absolute;
+     right: 0;
+     left: 0;
+     height: 60%;
+     padding: 10px 6px;
+     border-bottom-left-radius: 6px;
+     border-bottom-right-radius: 6px;
+}
+
+.sidebar a{
+    text-decoration: none;
+    font-family: roboto;
+    padding: 5px 10px;
+    color:white;
+   
+}
+
+.sidebar a:hover{
+    background-color: #0a1934;
+    color: white;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote | MD Construction</title>
+    <link rel="stylesheet" href="./styles/quote.css">
+    <link rel="stylesheet" href="./styles/shared/header.css">
+    <link rel="stylesheet" href="./styles/shared/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img class="logo-icon" src="./images/logo.png">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="form-hero">
+        <h1>Get a Free Quote</h1>
+        <p>Tell us about your project and we’ll get back to you</p>
+    </div>
+
+    <section class="form-section">
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="quote-form">
+
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="text" name="phone">
+            </div>
+
+            <div class="input-group">
+                <label>Service Needed</label>
+                <select name="service">
+                    <option>Plumbing</option>
+                    <option>Roofing</option>
+                    <option>Plastering</option>
+                    <option>Renovations</option>
+                    <option>Paving & Driveways</option>
+                    <option>Pool Construction</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Project Details</label>
+                <textarea name="message" rows="6" placeholder="Describe your project..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Request</button>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 MD Construction. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

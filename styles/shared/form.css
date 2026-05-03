@@ -1,6 +1,6 @@
 
 
-/* CONTACT SECTION */
+/* CONTACT SECTION 
 .contact-container {
     padding: 60px 20px;
     text-align: center;
@@ -19,7 +19,7 @@
     font-weight: 500;
 }
 
-/* FORM */
+
 .contact-form {
     max-width: 600px;
     margin: auto;
@@ -43,7 +43,7 @@
     border-color: #d83c09;
 }
 
-/* BUTTON */
+
 .submit-button {
     padding: 12px;
     border: none;
@@ -57,4 +57,46 @@
 
 .submit-button:hover {
     background: #b83207;
+}
+*/
+
+.contact-container {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+    color: white;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 700px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* Button styling */
+.quote-btn {
+    text-decoration: none;
+    background-color: #ff6a00;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.quote-btn:hover {
+    background-color: #e55b00;
+    transform: scale(1.05);
 }
