@@ -1,74 +1,114 @@
          .Upp-sec-prim {
-            background: url('../images/IMG-20260420-WA0065.jpg') no-repeat center/cover;
-           
-        }
+             background: url('../images/service-images/IMG-20260420-WA0065.jpg') no-repeat center/cover;
 
-.about-section {
-    padding: 60px 20px;
-    background: #ffffff;
-    max-width: 1000px;
-    margin: auto;
-    line-height: 1.7;
+         }
+
+
+
+         .section-title {
+             font-size: 1.5rem;
+             font-weight: bold;
+             margin-bottom: 20px;
+             color: #d83c09;
+         }
+
+         .about-section {
+             padding: 60px 20px;
+             background: #ffffff;
+             max-width: 1000px;
+             margin: auto;
+             line-height: 1.7;
+         }
+
+         /* HEADINGS */
+         .about-section h1 {
+             font-size: 36px;
+             margin-bottom: 15px;
+             color: #d52607;
+         }
+
+         .about-section h2 {
+             font-size: 28px;
+             margin-top: 40px;
+             margin-bottom: 15px;
+             color: #d52607;
+         }
+
+         .about-section h3 {
+             font-size: 20px;
+             margin-top: 25px;
+             margin-bottom: 8px;
+         }
+
+         /* PARAGRAPHS */
+         .about-section p {
+             color: #555;
+             margin-bottom: 15px;
+
+         }
+
+         /* WHY CHOOSE US STYLE (makes it pop a bit) */
+         .about-section h3 {
+             padding-left: 12px;
+             border-left: 4px solid #d83c09;
+             /* your orange theme */
+         }
+
+         /* OPTIONAL: add spacing between sections */
+         .about-section h2:not(:first-of-type) {
+             margin-top: 50px;
+         }
+
+         /* MOBILE FRIENDLY */
+         @media (max-width: 600px) {
+             .about-section {
+                 padding: 40px 15px;
+             }
+
+             .about-section h1 {
+                 font-size: 28px;
+             }
+
+             .about-section h2 {
+                 font-size: 24px;
+             }
+
+             .about-section h3 {
+                 font-size: 18px;
+             }
+         }
+
+         .services-nav {
+    
+    color:black;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* HEADINGS */
-.about-section h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-       color: #d52607;
+.services-nav h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
 }
 
-.about-section h2 {
-    font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #d52607;
+/* Links container */
+.services-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.about-section h3 {
-    font-size: 20px;
-    margin-top: 25px;
-    margin-bottom: 8px;
+/* Individual links */
+.services-links a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ff6a00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
 }
 
-/* PARAGRAPHS */
-.about-section p {
-    color: #555;
-    margin-bottom: 15px;
-     
+.services-links a:hover {
+    background-color: #ff6a00;
 }
-
-/* WHY CHOOSE US STYLE (makes it pop a bit) */
-.about-section h3 {
-    padding-left: 12px;
-    border-left: 4px solid #d83c09; /* your orange theme */
-}
-
-/* OPTIONAL: add spacing between sections */
-.about-section h2:not(:first-of-type) {
-    margin-top: 50px;
-}
-
-/* MOBILE FRIENDLY */
-@media (max-width: 600px) {
-    .about-section {
-        padding: 40px 15px;
-    }
-
-    .about-section h1 {
-        font-size: 28px;
-    }
-
-    .about-section h2 {
-        font-size: 24px;
-    }
-
-    .about-section h3 {
-        font-size: 18px;
-    }
-}
-
-
-
- 
- 

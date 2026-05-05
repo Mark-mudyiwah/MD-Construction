@@ -1,74 +1,7 @@
   .Upp-sec-prim {
-    background: url('../images/tiling.jfif') no-repeat center/cover;
+    background: url('../images/service-images/blue-tiling.jfif') no-repeat center/cover;
 
 }
 
  
-
-/* SECTION */
-.section {
-    padding: 60px 20px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.section h2 {
-    color: #c70707;
-    margin-bottom: 20px;
-}
-
-h3{
-   
-       color: #0932d8;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* CARD */
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* CTA */
-.cta {
-    background: none;
-    color: orangered;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.cta button {
-    margin-top: 15px;
-    padding: 12px 25px;
-    border: none;
-    background: black;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-/* FOOTER */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.card ul {
-    margin-top: 10px;
-    padding-left: 18px;
-}
-
-.card ul li {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 5px;
-}
+ 
