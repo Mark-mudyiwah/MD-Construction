@@ -8,14 +8,20 @@ form.addEventListener('submit', function (e) {
 
     const name = document.querySelector('.name-input').value.trim();
     const email = document.querySelector('.email-input').value.trim();
-    const cellNumber = document.querySelector('.cell-input').value.trim();
+    const cellNumber = document
+        .querySelector('.cell-input')
+        .value.replace(/\s+/g, '')
+        .trim();
     const projectDetails = document.querySelector('.project-details-input').value.trim()
 
     let errors = [];
 
+    errorElem.classList.remove('success');
+    errorElem.innerHTML = '';
+    errorElem.style.display = 'none';
     // Name validation
     if (name.length < 4) {
-        errors.push('Name must be at least 3 characters long');
+        errors.push('Name must be at least 4 characters long');
     }
 
     // Email validation (basic regex)
@@ -25,9 +31,9 @@ form.addEventListener('submit', function (e) {
     }
 
     // Cell number validation
-    const phonePattern = /^[0-9]{10}$/;
+    const phonePattern = /^(\+27|0)[0-9]{9}$/;
     if (!phonePattern.test(cellNumber)) {
-        errors.push('Enter a valid 10-digit phone number');
+        errors.push('Enter a valid phone number (e.g. 0712345678 or +26378345678)');
     }
 
     // project Details Validation
@@ -45,12 +51,44 @@ form.addEventListener('submit', function (e) {
         errorElem.style.display = 'block';
     } else {
 
-        // form.submit();
+        const submitBtn = form.querySelector('.submit-btn');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
 
-        errorElem.innerHTML = '✅ Your request has been sent successfully!';
-        errorElem.classList.add('success');
-        errorElem.style.display = 'block';
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then(response => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Request';
 
-        form.reset();
+                if (response.ok) {
+                    errorElem.innerHTML = '✅ Your request has been sent successfully!';
+                    errorElem.classList.add('success');
+                    errorElem.style.display = 'block';
+                    form.reset();
+                } else {
+                    errorElem.innerHTML = '❌ Something went wrong. Please try again.';
+                    errorElem.style.display = 'block';
+                }
+
+                errorElem.scrollIntoView({ behavior: 'smooth' });
+            })
+            .catch(() => {
+
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Request';
+                errorElem.innerHTML = '❌ Network error. Please try again.';
+                errorElem.style.display = 'block';
+
+                errorElem.scrollIntoView({ behavior: 'smooth' });
+
+            });
+
+
     }
 });
