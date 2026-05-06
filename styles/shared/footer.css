@@ -57,8 +57,7 @@
 }
 
 .header-icon {
-    width: 20px; /* Slightly smaller for better balance next to text */
-    height: 20px;
+    width: 30px; /* Slightly smaller for better balance next to text */
     margin-right: 12px;
     opacity: 0.8;
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -72,6 +71,7 @@
     color: #cbd5e1; /* Subtle gray-white */
     font-size: 0.95rem;
     transition: color 0.2s ease;
+ 
 }
 
 .footer-container a:hover {
